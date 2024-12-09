@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+.heading-section {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    z-index: 2;
+    margin: 0 auto;;
+}
+
+.heading-section h1 {
+    font-size: 30px; 
+    margin: 0;
+    padding: 10px 0;
+    background-color: #333; 
+    color: white;
+    position: absolute;
+    top: -40px; 
+    left: 0;
+    width: 100%; 
+    z-index: 3; 
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.left-section {
+    background-color: #b5d8e489;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 2px solid #000000;
+    border-radius: 3px;
+}
+
+.right-section {
+    background-color: rgba(180, 179, 244, 0.671);
+    padding: 20px;
+    width: 65%;
+    border-radius: 3px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #5f0ae8ca;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+
+#skills {
+    display: block; 
+}
+
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #1643d6; 
+    color: white; 
+    border: none;
+}
+
+button:hover {
+    background-color: #1643d6b7; 
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading-section {
+        width: 100%;
+    }
+
+    .heading-section h1 {
+        font-size: 24px; 
+        
+    }
+    
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        border-right: none; 
+    }
+
+    button {
+        font-size: 16px; 
+        padding: 10px 15px; 
+    }
+
+    #skills {
+        font-size: 14px;
+    }
+}

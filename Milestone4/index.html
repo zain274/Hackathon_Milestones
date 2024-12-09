@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <Link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <label for="father name">Father Name:</label>
+            <input type="text" id="father name" placeholder="Enter Your Father Name" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter Your Email" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter Your Cell No" required>  
+        <br><br>   
+        </fieldset>
+
+        <fieldset>
+            <legend>Profile Picture</legend>
+            <label for="profile-pic">Upload your picture:</label>
+            <input type="file" id="profile-pic" accept="image/*" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" placeholder="Enter Your Degree Name" required>
+            <label for="major">Major/Field of Study:</label>
+            <input type="text" id="major" placeholder="Enter Your Field Study" required>
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" placeholder="Enter Your Institute Name" required>
+            <label for="year">Years Attended:</label>
+            <input type="text" id="year" placeholder="e.g., 2015 - 2019" required>
+            <label for="cgpa">CGPA/Percentage:</label>
+            <input type="text" id="cgpa" placeholder="Enter Your CGPA/Percentage" required>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" placeholder="Enter Your Job Title" required>
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" placeholder="Enter Your Company Name" required>
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" placeholder="e.g., 2020 - Present" required>
+            <label for="key">Key Responsibilities:</label>
+            <textarea type="text" id="key" placeholder="Describe your key responsibilities" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea type="text" id="skills" placeholder="List your skills (use bullet points or numbering)" rows="5" required style="resize: none; list-style-type: decimal;"></textarea>
+        </fieldset>
+
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+
+    <br>
+
+    <!-- Getting Dynamic and Editable Resume -->
+    <div id="resume-display" contenteditable="true">
+        <!-- Resume will be generated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

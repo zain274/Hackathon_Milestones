@@ -1,0 +1,186 @@
+/* Styling form and resume sections */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: white;
+}
+
+form {
+    margin: auto;
+    background-color: rgb(228, 242, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+fieldset {
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(34, 29, 29);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+
+}
+
+input,textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 1px);
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: skyblue;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button :hover {
+    color: blue;
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Making the resume editable*/
+    outline: none; 
+}
+
+#resume-display h2 {
+    color: black;
+}
+
+.resume-section {
+    border: 2px solid skyblue; 
+    border-radius: 8px;        
+    padding: 20px;             
+    background-color: aliceblue; 
+    max-width: 600px;          
+    margin: auto;              
+}
+
+.resume-content {
+    margin-top: 20px;         
+}
+
+.resume-heading {
+    text-align: center;       
+    color: black;              
+}
+
+.profile-pic {
+    display: block;           
+    max-width: 150px;        
+    margin: 0 auto 10px;      
+    border-radius: 50%;        
+    border: 2px solid skyblue; 
+}
+
+.section {
+    border: 1px solid skyblue; 
+    border-radius: 4px;        
+    margin: 15px 0;            
+    padding: 15px;             
+    background-color: #f0f8ff; 
+    
+}
+
+.section-heading {
+    text-align: center;        
+    background-color: skyblue; 
+    color: black;              
+    padding: 10px;            
+    border-radius: 4px;       
+    box-shadow: 2px 2px ;
+}
+
+.responsibilities-list,
+.skills-list {
+    padding-left: 20px;       
+}
+
+#shareable-link-container {
+    max-width: 600px; /* Keep it the same as the resume display */
+    margin: auto; /* Center align */
+    padding: 20px; /* Add padding for spacing */
+    border: 2px solid skyblue; /* Same border style as resume */
+    border-radius: 8px; /* Same border radius */
+    background-color: rgb(228, 242, 255); /* Same background color as the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Same shadow effect */
+    margin-bottom: 20px; /* Add margin to separate from resume */
+}
+
+#shareable-link-element {
+    display: block; /* Make it a block element */
+    margin-top: 10px; /* Add some spacing on top */
+    color: black; /* Text color */
+    text-align: center; /* Center the link text */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding */
+    border: 2px solid skyblue; /* Add border for highlighting */
+    border-radius: 4px; /* Round the corners */
+    background-color: aliceblue; /* Light background for highlight */
+}
+
+#shareable-link-element:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#download-pdf-button {
+    display: block; /* Make it a block element */
+    width: 100%; /* Set width to 100% to fill the resume box */
+    background-color: skyblue; /* Same background color as the form button */
+    color: black; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Same border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Same shadow effect */
+    padding: 10px; /* Same padding */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 18px; /* Same font size */
+    font-family: 'Times New Roman', Times, serif; /* Same font family */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add margin above the button */
+    
+};
+
+#download-pdf-button:hover {
+    background-color: #0066cc; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+};
